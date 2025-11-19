@@ -1,0 +1,471 @@
+2025-11-08 19:05:38,855 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:05:45,782 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:05:47,284 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-08 19:05:53,400 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-11-08 19:06:00,617 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-08 19:06:58,343 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-08 19:06:58,344 - server_module - INFO - 📝 语音转文字任务: https://shilong-test.oss-cn-beijing.aliyuncs.com/%E6%88%90%E4%BA%BA%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B30.wav?Expires=1762603010&OSSAccessKeyId=TMP.3KsNTb4fggM8Cj5iQaaC9kqTvkHQ3mCyXvLqkv3bZivEXJ3GmrwU3zhUEBw7f9kgSodNX2MXXa2VehFEzeEipRS62HZ4Fm&Signature=nh9G07NksP08%2FXUTGQJvdbWXsVg%3D, 语言: auto
+2025-11-08 19:06:58,916 - server_module - INFO - ✅ 转录成功，文本长度: 6 字符
+2025-11-08 19:07:17,901 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-08 19:07:17,901 - server_module - INFO - 👤 说话人分析任务: https://shilong-test.oss-cn-beijing.aliyuncs.com/%E6%88%90%E4%BA%BA%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B30.wav?Expires=1762603010&OSSAccessKeyId=TMP.3KsNTb4fggM8Cj5iQaaC9kqTvkHQ3mCyXvLqkv3bZivEXJ3GmrwU3zhUEBw7f9kgSodNX2MXXa2VehFEzeEipRS62HZ4Fm&Signature=nh9G07NksP08%2FXUTGQJvdbWXsVg%3D
+2025-11-08 19:07:18,978 - server_module - INFO - ✅ 说话人分析完成
+2025-11-08 19:08:02,224 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-08 19:08:02,225 - server_module - INFO - 📊 综合音频分析任务: https://shilong-test.oss-cn-beijing.aliyuncs.com/%E6%88%90%E4%BA%BA%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B30.wav?Expires=1762603010&OSSAccessKeyId=TMP.3KsNTb4fggM8Cj5iQaaC9kqTvkHQ3mCyXvLqkv3bZivEXJ3GmrwU3zhUEBw7f9kgSodNX2MXXa2VehFEzeEipRS62HZ4Fm&Signature=nh9G07NksP08%2FXUTGQJvdbWXsVg%3D
+2025-11-08 19:08:05,011 - server_module - INFO - ✅ 综合分析完成
+2025-11-08 19:08:45,152 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-08 19:08:45,152 - server_module - INFO - 🎵 音频事件检测任务: https://shilong-test.oss-cn-beijing.aliyuncs.com/%E6%88%90%E4%BA%BA%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B30.wav?Expires=1762603010&OSSAccessKeyId=TMP.3KsNTb4fggM8Cj5iQaaC9kqTvkHQ3mCyXvLqkv3bZivEXJ3GmrwU3zhUEBw7f9kgSodNX2MXXa2VehFEzeEipRS62HZ4Fm&Signature=nh9G07NksP08%2FXUTGQJvdbWXsVg%3D, 类型: all
+2025-11-08 19:08:46,486 - server_module - INFO - ✅ 音频事件检测完成
+2025-11-08 19:09:12,173 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-08 19:22:06,955 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:22:58,043 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:23:01,479 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-08 19:23:11,840 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-08 19:23:11,841 - server_module - INFO - 👤 说话人分析任务: https://shilong-test.oss-cn-beijing.aliyuncs.com/%E6%88%90%E4%BA%BA%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B30.wav?Expires=1762603010&OSSAccessKeyId=TMP.3KsNTb4fggM8Cj5iQaaC9kqTvkHQ3mCyXvLqkv3bZivEXJ3GmrwU3zhUEBw7f9kgSodNX2MXXa2VehFEzeEipRS62HZ4Fm&Signature=nh9G07NksP08%2FXUTGQJvdbWXsVg%3D
+2025-11-08 19:23:12,995 - server_module - INFO - ✅ 说话人分析完成
+2025-11-08 19:24:45,453 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:24:52,813 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:25:09,949 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:25:09,953 - __main__ - INFO - ============================================================
+2025-11-08 19:25:09,953 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 19:25:09,953 - __main__ - INFO - ============================================================
+2025-11-08 19:25:09,953 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 19:25:09,954 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 19:25:09,954 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 19:25:09,954 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 19:25:09,954 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 19:25:09,954 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 19:25:09,954 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 19:25:09,954 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 19:25:09,954 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 19:25:09,954 - __main__ - INFO - ============================================================
+2025-11-08 19:25:09,954 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 19:25:09,980 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 19:25:20,127 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 5d9ebde200c54f2c879c1bf712c3bee6
+2025-11-08 19:25:20,862 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 2b9dc65dca614a7aaa3ab120f3c159c2
+2025-11-08 19:25:21,459 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 33ab884f5ff54cbc89b4f8fd5f6355b2
+2025-11-08 19:25:21,636 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: d3ab64ed6f4f4b0392fa94d3c338606a
+2025-11-08 19:25:21,769 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: eca7a65ef29d44b2a3f54a8a462f3e8a
+2025-11-08 19:25:27,929 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 8672244d2b5e4783abad729ece9263da
+2025-11-08 19:25:34,956 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 77d9aa1c81f3480aa8677dfdfba5a764
+2025-11-08 19:25:36,257 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: bf12bb28c2a942fd973ed666232a385f
+2025-11-08 19:25:36,459 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 916d5bf624a541e3a1d254c9f82a92fc
+2025-11-08 19:25:49,638 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 47726b1e4203410691074c62595833e2
+2025-11-08 19:25:50,005 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: ad1d3a7c6b464684bf0648e9942ae1ef
+2025-11-08 19:25:50,204 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 02a28311e8624e8199b98fe21cc682c5
+2025-11-08 19:30:41,581 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 19:31:18,787 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:31:18,791 - __main__ - INFO - ============================================================
+2025-11-08 19:31:18,791 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 19:31:18,791 - __main__ - INFO - ============================================================
+2025-11-08 19:31:18,791 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 19:31:18,791 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 19:31:18,791 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 19:31:18,791 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 19:31:18,791 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 19:31:18,791 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 19:31:18,791 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 19:31:18,792 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 19:31:18,792 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 19:31:18,792 - __main__ - INFO - ============================================================
+2025-11-08 19:31:18,792 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 19:32:48,397 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:32:48,402 - __main__ - INFO - ============================================================
+2025-11-08 19:32:48,402 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 19:32:48,402 - __main__ - INFO - ============================================================
+2025-11-08 19:32:48,402 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 19:32:48,402 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 19:32:48,402 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 19:32:48,402 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 19:32:48,402 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 19:32:48,402 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 19:32:48,402 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 19:32:48,402 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 19:32:48,402 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 19:32:48,402 - __main__ - INFO - ============================================================
+2025-11-08 19:32:48,402 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 19:33:28,286 - __main__ - INFO - 
+👋 服务器已停止
+2025-11-08 19:45:32,172 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:45:32,177 - __main__ - INFO - ============================================================
+2025-11-08 19:45:32,177 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 19:45:32,177 - __main__ - INFO - ============================================================
+2025-11-08 19:45:32,177 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 19:45:32,177 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 19:45:32,177 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 19:45:32,177 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 19:45:32,177 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 19:45:32,177 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 19:45:32,177 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 19:45:32,177 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 19:45:32,177 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 19:45:32,177 - __main__ - INFO - ============================================================
+2025-11-08 19:45:32,177 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 19:45:32,180 - __main__ - ERROR - ❌ 服务器启动失败: FastMCP.run_http_async() got an unexpected keyword argument 'cors_origins'
+2025-11-08 19:49:01,126 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:49:25,107 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:59:57,425 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 19:59:57,430 - __main__ - INFO - ============================================================
+2025-11-08 19:59:57,430 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 19:59:57,430 - __main__ - INFO - ============================================================
+2025-11-08 19:59:57,430 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 19:59:57,430 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 19:59:57,430 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 19:59:57,430 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 19:59:57,430 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 19:59:57,430 - __main__ - INFO - ============================================================
+2025-11-08 19:59:57,430 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:01:31,822 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:04:59,007 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:04:59,012 - __main__ - INFO - ============================================================
+2025-11-08 20:04:59,012 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 20:04:59,012 - __main__ - INFO - ============================================================
+2025-11-08 20:04:59,012 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:04:59,012 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 20:04:59,012 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:04:59,013 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:04:59,013 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 20:04:59,013 - __main__ - INFO - ============================================================
+2025-11-08 20:04:59,013 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:04:59,048 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:06:42,320 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:07:34,244 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:07:34,249 - __main__ - INFO - ============================================================
+2025-11-08 20:07:34,249 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 20:07:34,249 - __main__ - INFO - ============================================================
+2025-11-08 20:07:34,249 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:07:34,249 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 20:07:34,249 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:07:34,249 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:07:34,249 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 20:07:34,249 - __main__ - INFO - ============================================================
+2025-11-08 20:07:34,249 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:07:34,280 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:07:48,731 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e7b222bbdc404999a58310149ee77641
+2025-11-08 20:07:48,738 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c71faf4f1f4445c683e93e2e8b0334be
+2025-11-08 20:07:52,315 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: cd144d61df1c4dffb38ac71ae03108c9
+2025-11-08 20:07:52,322 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 438429ac7e134df58adc7245e6abf8f0
+2025-11-08 20:08:12,840 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 0b236760dda64349a16cd815d25401d5
+2025-11-08 20:08:12,846 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 5cb425264b69499e8abe2f798c3bc44e
+2025-11-08 20:08:16,501 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 52adcfb4d4144a0f91fb1b0a6731de4a
+2025-11-08 20:08:16,694 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: d4bc8d4e4fc44d9f802b9866d627167f
+2025-11-08 20:08:57,750 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 5298d35f39df4972b5736aaa6946cdcb
+2025-11-08 20:08:57,754 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: b49143f810e54d3481e6b19a73f3c386
+2025-11-08 20:09:40,986 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:11:16,463 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:11:35,770 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:11:48,279 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:14:47,404 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:14:47,409 - __main__ - INFO - ============================================================
+2025-11-08 20:14:47,409 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 20:14:47,409 - __main__ - INFO - ============================================================
+2025-11-08 20:14:47,409 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:14:47,409 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 20:14:47,409 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:14:47,409 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:14:47,409 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 20:14:47,409 - __main__ - INFO - ============================================================
+2025-11-08 20:14:47,409 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:14:47,440 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:15:48,469 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3c96daec010f49cf8f3e4684af9a178a
+2025-11-08 20:15:48,474 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 73e4916c62ba4e419d61595c70a90c00
+2025-11-08 20:16:45,735 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c9dfd5c51b5e4d6eb343c78c08adf298
+2025-11-08 20:16:45,742 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 55e2c812109f467788e6ded1cff9b3e1
+2025-11-08 20:17:21,738 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 27a8c50f985a48bc8437b66ece167e6d
+2025-11-08 20:17:21,742 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f4923a8aa16a45ed9352f3fb7f2c9194
+2025-11-08 20:17:22,339 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 626d962236cb4fc4b511a8eb439cf72c
+2025-11-08 20:17:22,350 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 2f2bc3a3579a4f869ec15c6f581570d6
+2025-11-08 20:17:22,512 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: b632b058550640ff8f8ceac2585fc24c
+2025-11-08 20:17:22,515 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3a611dd695654e2ea2ed91ff972843cb
+2025-11-08 20:17:30,801 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:17:51,124 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:18:12,232 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:18:39,596 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:18:39,600 - __main__ - INFO - ============================================================
+2025-11-08 20:18:39,600 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 20:18:39,600 - __main__ - INFO - ============================================================
+2025-11-08 20:18:39,600 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:18:39,600 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 20:18:39,600 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:18:39,600 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:18:39,600 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 20:18:39,600 - __main__ - INFO - ============================================================
+2025-11-08 20:18:39,600 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:18:39,619 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:19:18,614 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: b0d634593ff546b1b22da590ea5106dd
+2025-11-08 20:19:18,616 - mcp.server.transport_security - WARNING - Missing Content-Type header in POST request
+2025-11-08 20:19:21,595 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 4a14efcc35f34b329a739db33f6651b6
+2025-11-08 20:19:21,596 - mcp.server.transport_security - WARNING - Missing Content-Type header in POST request
+2025-11-08 20:19:55,585 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 83512f2f22d84e258c907a9f168cf1e3
+2025-11-08 20:20:35,357 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 992bf6cfc0f8471eb014d8c536616288
+2025-11-08 20:20:45,077 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: bb9874560fe74811918fbab1608db1ad
+2025-11-08 20:22:36,231 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 7865b611662b44a0b1d6080bb96be612
+2025-11-08 20:22:36,242 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 136d9126b50e4cf786096183997c909a
+2025-11-08 20:22:37,110 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f74525b1efee4fe3b1debd26c6f2c00e
+2025-11-08 20:22:37,121 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 4cd9c588ffcb46a1bdc3124c4d0650a8
+2025-11-08 20:22:37,677 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: a9081261cb2947f5af8b2ae06c5c6717
+2025-11-08 20:22:37,685 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 6363cfded83b4d5dbef81ebe508d242d
+2025-11-08 20:22:38,079 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 350db622053c4daa9a74b7f3c43879cc
+2025-11-08 20:22:38,084 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 800ede77659248758d5ccde5a9df11cc
+2025-11-08 20:22:38,256 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3db41e35b1584893ae6223fa1b46b046
+2025-11-08 20:22:38,263 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: b339a2d6a2c9447d9fa09814499d1f38
+2025-11-08 20:22:40,743 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:22:42,319 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:22:42,323 - __main__ - INFO - ============================================================
+2025-11-08 20:22:42,324 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 20:22:42,324 - __main__ - INFO - ============================================================
+2025-11-08 20:22:42,324 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:22:42,324 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 20:22:42,324 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:22:42,324 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:22:42,324 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 20:22:42,324 - __main__ - INFO - ============================================================
+2025-11-08 20:22:42,324 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:22:42,350 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:22:47,912 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f3d7e64d5693440782e5be55eab3dc13
+2025-11-08 20:22:47,917 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 8ede6940e13e4da182ef3293cdd5b0cb
+2025-11-08 20:22:48,399 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 8373eeacebed4434bfbad88b46f9600e
+2025-11-08 20:22:48,404 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: ef9c9c97901e4b678ad48460fd681dcb
+2025-11-08 20:22:48,570 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 1948b8cb97df4fb1aee3dc8eafb1530c
+2025-11-08 20:22:48,577 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 52430c069773497b9384e14d4f213e6d
+2025-11-08 20:23:05,902 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:23:08,493 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:23:08,498 - __main__ - INFO - ============================================================
+2025-11-08 20:23:08,498 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器 (已配置 CORS)
+2025-11-08 20:23:08,498 - __main__ - INFO - ============================================================
+2025-11-08 20:23:08,498 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:23:08,498 - __main__ - INFO - ❗️ SSE 连接端点: http://127.0.0.1:8000/sse
+2025-11-08 20:23:08,498 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:23:08,498 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:23:08,498 - __main__ - INFO -    - transcribe_audio, analyze_speaker, detect_audio_events, ...
+2025-11-08 20:23:08,498 - __main__ - INFO - ============================================================
+2025-11-08 20:23:08,498 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:23:08,517 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:23:35,436 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c76f3b75f23142fc825b86e1ef33d4cb
+2025-11-08 20:25:07,413 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:26:29,221 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:26:29,225 - __main__ - INFO - ============================================================
+2025-11-08 20:26:29,225 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 20:26:29,225 - __main__ - INFO - ============================================================
+2025-11-08 20:26:29,225 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:26:29,225 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:26:29,225 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:26:29,225 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 20:26:29,225 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 20:26:29,225 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 20:26:29,225 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 20:26:29,225 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 20:26:29,225 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 20:26:29,226 - __main__ - INFO - ============================================================
+2025-11-08 20:26:29,226 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:26:29,228 - __main__ - ERROR - ❌ 服务器启动失败: FastMCP.run_stdio_async() got an unexpected keyword argument 'host'
+2025-11-08 20:27:07,313 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:27:07,317 - __main__ - INFO - ============================================================
+2025-11-08 20:27:07,317 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 20:27:07,317 - __main__ - INFO - ============================================================
+2025-11-08 20:27:07,317 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:27:07,317 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:27:07,317 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:27:07,318 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 20:27:07,318 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 20:27:07,318 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 20:27:07,318 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 20:27:07,318 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 20:27:07,318 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 20:27:07,318 - __main__ - INFO - ============================================================
+2025-11-08 20:27:07,318 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:27:32,160 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:27:32,164 - __main__ - INFO - ============================================================
+2025-11-08 20:27:32,164 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 20:27:32,164 - __main__ - INFO - ============================================================
+2025-11-08 20:27:32,164 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:27:32,164 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:27:32,164 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:27:32,164 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 20:27:32,164 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 20:27:32,164 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 20:27:32,164 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 20:27:32,164 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 20:27:32,164 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 20:27:32,164 - __main__ - INFO - ============================================================
+2025-11-08 20:27:32,164 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:27:38,771 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:28:09,211 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:28:09,215 - __main__ - INFO - ============================================================
+2025-11-08 20:28:09,215 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 20:28:09,215 - __main__ - INFO - ============================================================
+2025-11-08 20:28:09,215 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:28:09,215 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:28:09,215 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:28:09,215 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 20:28:09,215 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 20:28:09,215 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 20:28:09,215 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 20:28:09,215 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 20:28:09,215 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 20:28:09,215 - __main__ - INFO - ============================================================
+2025-11-08 20:28:09,216 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:28:14,908 - __main__ - INFO - 
+👋 服务器已停止
+2025-11-08 20:28:25,169 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:28:25,173 - __main__ - INFO - ============================================================
+2025-11-08 20:28:25,174 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 20:28:25,174 - __main__ - INFO - ============================================================
+2025-11-08 20:28:25,174 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:28:25,174 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:28:25,174 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:28:25,174 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 20:28:25,174 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 20:28:25,174 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 20:28:25,174 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 20:28:25,174 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 20:28:25,174 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 20:28:25,174 - __main__ - INFO - ============================================================
+2025-11-08 20:28:25,174 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:28:25,191 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:28:51,758 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: b609283ea4c04af2b5ea62d2c7c45179
+2025-11-08 20:28:52,531 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 5e900368f65c4da0ae7c7003cbebe4ba
+2025-11-08 20:29:20,060 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e04f62784a6c45369bff4aeb810db8a5
+2025-11-08 20:29:31,829 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 382981ed28944d7f836be81cbd17b6c6
+2025-11-08 20:29:50,683 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3053e783b9234fba873f51ca94f167f5
+2025-11-08 20:30:25,968 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: daabf7e67ec54b9aa4a5fa2bffa055af
+2025-11-08 20:30:43,391 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e38a0b863e7a41d8a505bb2b11d89efb
+2025-11-08 20:30:46,398 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: cfd5e26baa9d4e0cbeb9f8fca5ffb25c
+2025-11-08 20:30:49,407 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: a90d958f38f145748eca0bca3b18cc0b
+2025-11-08 20:30:52,417 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 6d91d4358c2d4ee5831579326df11f5d
+2025-11-08 20:30:55,429 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 2965092351f54b7598f2ffffe334e1f4
+2025-11-08 20:30:58,435 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: fc76be3b2f0243cc993de4da377ab46b
+2025-11-08 20:31:01,443 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 9d694f7b35b04339b1f02cd4d548f5a3
+2025-11-08 20:31:04,450 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 049d4b78f5f747b5a65da9cd84a1231b
+2025-11-08 20:31:05,996 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 2d627a3caf8d4e57acc8658004ecc880
+2025-11-08 20:31:07,456 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 7f202e5f3293445788ec3c8a31c86a4c
+2025-11-08 20:31:09,005 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: fe202a65bd0f45dc88197701d613ecf0
+2025-11-08 20:31:10,467 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e90f049d17c9449e8d68391e8090b9cb
+2025-11-08 20:31:12,014 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: d6970660e01c44859949c0d45deb470a
+2025-11-08 20:31:13,474 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 297702dfcbb649d184c579d65c9d1250
+2025-11-08 20:31:15,019 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 18b36d0971b143ad95671f513b6e8f82
+2025-11-08 20:31:16,480 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 386b12c1ca7f4e92991a5538349590d1
+2025-11-08 20:31:18,028 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f5e66972f7654e2ab8c2045c430a7f67
+2025-11-08 20:31:19,486 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 9ad0a9b7add748f8b252a6bc5bf7d9bc
+2025-11-08 20:31:21,043 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f3c8c4f1731c4f83be5c9471dea82efb
+2025-11-08 20:31:22,496 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 1bbbbd8ea1df462bbb9e1a557fedcd86
+2025-11-08 20:31:24,052 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 73b29eed932e405e9827a70f3f2920b6
+2025-11-08 20:31:25,502 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 0860891deb784d27ace90f485c28fa36
+2025-11-08 20:31:26,870 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: b9ec546d4b644a2491af76cc9b4f0849
+2025-11-08 20:31:27,799 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 17fee1dbd7e24758bcf1e13dc4b0a752
+2025-11-08 20:31:28,614 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: fab5ce6a03ad46829c38095119f5d51a
+2025-11-08 20:31:30,809 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: faf33565018841149843845d90dba2b6
+2025-11-08 20:31:31,621 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 10dba5df752a4c5f97d75bc5ab4907eb
+2025-11-08 20:31:33,816 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: daaa349d15334456b7af4c8af8fcb559
+2025-11-08 20:31:34,628 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 911f61b2fa1e4b1a9cb00e2462905fbe
+2025-11-08 20:31:36,822 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: d5178ba534844cddb7d991a516bef982
+2025-11-08 20:31:37,636 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 233502bb844d4de8bfba99af3a65387d
+2025-11-08 20:31:39,828 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c35002d92cc445079fb1a5668bc9448d
+2025-11-08 20:31:40,643 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: bb7071449758448e9cca683ceb8d5f53
+2025-11-08 20:31:42,835 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 74b10d3e31424bcdbef7aa9661d642c8
+2025-11-08 20:31:43,649 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 7f82a653818b45999015b85d61548d46
+2025-11-08 20:31:45,843 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 07a3abfbea6d49368bd7de8f664d2228
+2025-11-08 20:31:46,656 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 296e983d1eae45458bcdc63f4422bda2
+2025-11-08 20:31:48,850 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 7963bb1cc6ba41ceb0ab69f922b6c050
+2025-11-08 20:31:49,665 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c79cdb525ef041ce99a4662c591eb4a4
+2025-11-08 20:31:51,859 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 40029c70c01e41c09b06bb3520a4dd39
+2025-11-08 20:31:52,673 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e130204f89e147b384e5d398bb9b814a
+2025-11-08 20:31:54,867 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 92950f1c162442979e811076ad46fc36
+2025-11-08 20:31:55,685 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f81437d4a1d0450d817049d4c4b7abf3
+2025-11-08 20:31:57,873 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 209da32727ce4c1cb282178cb22fdfe3
+2025-11-08 20:31:58,693 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 5ecb845111854f0ea87d8a7f4ea4ceaa
+2025-11-08 20:32:00,886 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 83ff31fef3cc46c0b94c165365f5b0b3
+2025-11-08 20:32:01,700 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 228d60fb7e7842e48f00a202e7369266
+2025-11-08 20:32:03,897 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: dd3cc9d2207642da86b9b47afe387c5d
+2025-11-08 20:32:04,708 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3fac9309676945c090ead9859b303c3a
+2025-11-08 20:32:06,908 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: cee1217032f54b648c3606d9cc793fce
+2025-11-08 20:32:07,795 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 4d0fee037c034d6aa0c55215f962f814
+2025-11-08 20:32:10,795 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 42c28e0736dd44849fef986d284f6e7c
+2025-11-08 20:32:10,978 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 1a1a6c682c8d472788d1a03125ac2d80
+2025-11-08 20:32:13,809 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: d2ad2eea1576486f86710da317041dc6
+2025-11-08 20:32:13,986 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e317bf1f52bc4c48b73d13edd5867a4f
+2025-11-08 20:32:16,818 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e89f1cce6e594ba69b0362148574a7c3
+2025-11-08 20:32:16,996 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 2d8d5e6c3279469dbb5d967fe62c5ebf
+2025-11-08 20:32:19,824 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: a52fc438a39748c19997c9be9f1765fd
+2025-11-08 20:32:20,006 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f3fbc055d31f41378473b8c633381836
+2025-11-08 20:32:22,828 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 700272d7377f4c1b9921038718930958
+2025-11-08 20:32:23,016 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3f732d05f91b4cc4a181bebf0fc5aeb7
+2025-11-08 20:32:25,836 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: efc19551673e46329f76ae5be57a3a33
+2025-11-08 20:32:26,024 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: a4122ed211474efe89d48716cef2e8e7
+2025-11-08 20:32:28,844 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e3e82952566a4a38ad72d5f4b5a4febd
+2025-11-08 20:32:29,033 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 7efdc6aa9ec54bcea3f05761df7a3c32
+2025-11-08 20:32:31,853 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 30076df9bcda4f5eac601fb22ecffe90
+2025-11-08 20:32:32,040 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 324b85fb32cc4913bb07fba9281b9639
+2025-11-08 20:32:34,865 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: ea8b9d20a65d42608a3855a080b937f4
+2025-11-08 20:32:35,047 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: e3a67fa77daf43db84ba87be07eb04c3
+2025-11-08 20:32:37,872 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 906507c838114c49a61ee2b8c5d1e661
+2025-11-08 20:32:38,056 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f18a17275d3a412cb45672def1b83da7
+2025-11-08 20:32:40,881 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 6ee108b9aede489b8c0afc89e7f8ca9c
+2025-11-08 20:32:41,063 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: a50296fd67184c158f7e46c396909a73
+2025-11-08 20:32:43,890 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: aa88ab4b57fd419187003ae50cf88a1b
+2025-11-08 20:32:44,070 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 6e4385771a3249c68438ee6c560f3667
+2025-11-08 20:32:45,154 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 97055d6734f843758669bc11a5422583
+2025-11-08 20:32:46,900 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 5912a812746c4226b0b83f680713024c
+2025-11-08 20:32:47,076 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 593f6c09a8604e49b552bb953b9a23e3
+2025-11-08 20:32:49,910 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 231c5caee2224f90b38d5602cb6b3665
+2025-11-08 20:32:50,082 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c4b58784e8c84d0191b1c23a45ed86bb
+2025-11-08 20:32:52,921 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 882ebcd956694fbb9728bd9e97bca13d
+2025-11-08 20:32:53,089 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 1b7502360dd84b1e9bc4c7e6c06a1316
+2025-11-08 20:32:55,934 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f4263ba4db824f61862296ec3a6521f0
+2025-11-08 20:32:56,098 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 39479577a541400e9532337442e12a7d
+2025-11-08 20:32:58,949 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: cbd91d94a5934e91b443e17ae79ec617
+2025-11-08 20:32:59,106 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 73a38909996b48ee8bc2bd393e6cbf0d
+2025-11-08 20:33:01,955 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c03ba6896a9944338f9e5f67776532e8
+2025-11-08 20:33:02,113 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 9ad7561b0baa449a86eeebcd8d1df97f
+2025-11-08 20:33:04,961 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 19f0b659472149709792afbd1f2bc674
+2025-11-08 20:33:05,119 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: c3b5f17af55243bb8d5b40d17636e14e
+2025-11-08 20:33:08,795 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 93adcfa6b66e4412af38bbc4ea26e7bd
+2025-11-08 20:33:08,798 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: a4b7fd58212b4ed189243e2f727cb5f6
+2025-11-08 20:33:08,918 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 1417c458b9bd42988721ab3186f0fdc8
+2025-11-08 20:33:11,803 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 219a3581533943b08c55b7c7762687fd
+2025-11-08 20:33:11,804 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 87ccb5d5bc4e42118713c07abe74aa91
+2025-11-08 20:33:14,807 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 12cf543a4dd04ef4b8d52c529ae75660
+2025-11-08 20:33:14,808 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: ff6616bf78df455a9ab75ca7a20a3218
+2025-11-08 20:33:28,960 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 952235146243418893c19c6873913ea8
+2025-11-08 20:33:38,643 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-11-08 20:33:38,665 - __main__ - INFO - 
+👋 服务器已停止
+2025-11-08 20:33:40,772 - __main__ - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-08 20:33:40,777 - __main__ - INFO - ============================================================
+2025-11-08 20:33:40,777 - __main__ - INFO - 🎧 增强型音频理解 MCP 服务器
+2025-11-08 20:33:40,777 - __main__ - INFO - ============================================================
+2025-11-08 20:33:40,777 - __main__ - INFO - 📡 服务地址: http://127.0.0.1:8000
+2025-11-08 20:33:40,777 - __main__ - INFO - 🤖 使用模型: qwen-audio-turbo
+2025-11-08 20:33:40,777 - __main__ - INFO - 🔧 可用工具:
+2025-11-08 20:33:40,777 - __main__ - INFO -    - transcribe_audio: 语音转文字
+2025-11-08 20:33:40,777 - __main__ - INFO -    - analyze_speaker: 说话人分析
+2025-11-08 20:33:40,777 - __main__ - INFO -    - detect_audio_events: 音频事件检测
+2025-11-08 20:33:40,777 - __main__ - INFO -    - search_keyword_in_audio: 关键词搜索
+2025-11-08 20:33:40,777 - __main__ - INFO -    - comprehensive_audio_analysis: 综合分析
+2025-11-08 20:33:40,777 - __main__ - INFO -    - get_server_status: 服务器状态
+2025-11-08 20:33:40,777 - __main__ - INFO - ============================================================
+2025-11-08 20:33:40,777 - __main__ - INFO - ✅ 服务器启动中...
+2025-11-08 20:33:40,800 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-11-08 20:33:50,129 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: fd9711916f3540d8987b4140190eee5f
+2025-11-08 20:34:37,412 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 252db989b6f2478a8183a3282bc81abf
+2025-11-08 20:34:53,252 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 3862b5c6576f440e88a7cac5d75dfc53
+2025-11-08 20:36:07,168 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 96bfd12c3b784dccb8f0cf253c3dfe87
+2025-11-10 11:16:36,682 - server_module - ERROR - ❌ 未找到环境变量 DASHSCOPE_API_KEY
+2025-11-10 11:16:36,682 - server_module - ERROR - 请运行: export DASHSCOPE_API_KEY='your-api-key'
+2025-11-10 11:16:45,922 - server_module - ERROR - ❌ 未找到环境变量 DASHSCOPE_API_KEY
+2025-11-10 11:16:45,922 - server_module - ERROR - 请运行: export DASHSCOPE_API_KEY='your-api-key'
+2025-11-10 11:17:04,958 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-10 11:17:10,862 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: f0124f392b094991bb7975691ba82a11
+2025-11-10 11:17:16,125 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-10 11:17:19,082 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-10 11:17:58,086 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-10 11:17:58,087 - server_module - INFO - 🎵 音频事件检测任务: https://shilong-test.oss-cn-beijing.aliyuncs.com/%E6%88%90%E4%BA%BA%E4%B8%AD%E6%96%87%E8%AF%AD%E9%9F%B30.wav?Expires=1762747668&OSSAccessKeyId=TMP.3Kt84PSfJkASdnC6BiyW9CnD8UV8K6ZCEMjhHLcTvL2cNawpnXcEJ6syi4U7T9NuvGM2zfMtBv1JgHXQsCrYCvuUbncXJU&Signature=t2aBlQz%2FuOofwpZGUdmFnYnzP8U%3D, 类型: all
+2025-11-10 11:17:59,520 - server_module - INFO - ✅ 音频事件检测完成
+2025-11-11 18:15:50,790 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-11 18:15:58,240 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-11 18:16:01,451 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-11 18:16:15,023 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-11 18:16:15,025 - server_module - INFO - 👤 说话人分析任务: 
+2025-11-11 18:16:15,025 - server_module - ERROR - ❌ 无效的 URL: 
+2025-11-11 18:26:22,699 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-12 14:51:48,490 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
+2025-11-13 10:02:07,996 - server_module - INFO - ✅ API Key 已配置，使用模型: qwen-audio-turbo
