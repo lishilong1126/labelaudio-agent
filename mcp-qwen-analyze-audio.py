@@ -560,7 +560,7 @@ if __name__ == "__main__":
     logger.info("✅ 服务器启动中...")
     
     try:
-        mcp.run(transport="http", host=Config.HOST, port=Config.PORT)
+        mcp.run(transport="sse", host=Config.HOST, port=Config.PORT)
     except KeyboardInterrupt:
         logger.info("\n👋 服务器已停止")
     except Exception as e:
