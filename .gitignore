@@ -56,3 +56,4 @@ inspect_*.py
 # Gradio
 gradio_cached_examples/
 flagged/
+.env
