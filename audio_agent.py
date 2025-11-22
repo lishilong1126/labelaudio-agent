@@ -28,9 +28,15 @@ load_dotenv()
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)]
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler('agent_execution.log', encoding='utf-8')
+    ]
 )
 logger = logging.getLogger(__name__)
+
+# 导入自定义回调处理器
+from agent_logger import AgentExecutionLogger
 
 # MCP Server Configuration
 MCP_SERVER_URL = os.getenv("MCP_SERVER_URL", "http://127.0.0.1:8000/sse")
@@ -109,6 +115,9 @@ async def run_agent_interactive():
             temperature=0
         )
         
+        logger.info("🎯 正在创建 Deep Agent...")
+        logger.info(f"📊 可用工具: {[t.name for t in tools]}")
+        
         agent = create_deep_agent(
             model=llm,
             tools=tools,
@@ -124,6 +133,8 @@ async def run_agent_interactive():
 """
         )
         
+        logger.info("✅ Agent 创建成功")
+        
         # Get User Input
         if len(sys.argv) > 1:
             user_input = " ".join(sys.argv[1:])
@@ -137,8 +148,23 @@ async def run_agent_interactive():
         
         print(f"\n🚀 Processing Request...\n")
         
+        logger.info("=" * 80)
+        logger.info("🚀 开始处理用户请求")
+        logger.info(f"📝 用户输入: {user_input}")
+        logger.info("=" * 80)
+        
+        # 创建日志记录器用于本次请求
+        execution_logger = AgentExecutionLogger()
+        
         # Invoke the agent
-        response = await agent.ainvoke({"messages": [("user", user_input)]})
+        response = await agent.ainvoke(
+            {"messages": [("user", user_input)]},
+            config={"callbacks": [execution_logger]}
+        )
+        
+        logger.info("=" * 80)
+        logger.info("✅ 请求处理完成")
+        logger.info("=" * 80)
         
         print("\n✅ Agent Response:")
         if isinstance(response, dict) and "messages" in response:

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==========================================
-# Audio Agent 启动与测试脚本
+# Gradio UI 启动脚本
 # ==========================================
 
 # 颜色定义
@@ -44,10 +44,25 @@ if [ ! -z "$OLD_MCP_PIDS" ]; then
     echo -e "${GREEN}✅ 已清理旧的 MCP Server 进程${NC}"
 fi
 
+# 查找并杀死旧的 Gradio UI 进程
+OLD_GRADIO_PIDS=$(ps aux | grep '[g]radio_ui.py' | awk '{print $2}')
+if [ ! -z "$OLD_GRADIO_PIDS" ]; then
+    echo "发现旧的 Gradio UI 进程: $OLD_GRADIO_PIDS"
+    kill $OLD_GRADIO_PIDS 2>/dev/null
+    sleep 1
+    echo -e "${GREEN}✅ 已清理旧的 Gradio UI 进程${NC}"
+fi
+
 # 检查端口占用
 if lsof -Pi :8000 -sTCP:LISTEN -t >/dev/null 2>&1; then
     echo -e "${YELLOW}⚠️  端口 8000 被占用，尝试释放...${NC}"
     lsof -ti:8000 | xargs kill -9 2>/dev/null
+    sleep 1
+fi
+
+if lsof -Pi :7860 -sTCP:LISTEN -t >/dev/null 2>&1; then
+    echo -e "${YELLOW}⚠️  端口 7860 被占用，尝试释放...${NC}"
+    lsof -ti:7860 | xargs kill -9 2>/dev/null
     sleep 1
 fi
 
@@ -72,24 +87,18 @@ fi
 
 echo -e "${GREEN}✅ MCP Server 已在后台运行${NC}"
 
-# 2. 运行功能测试
-echo -e "\n${GREEN}🧪 开始运行功能测试 (functional_test.py)...${NC}"
+# 2. 启动 Gradio UI
+echo -e "\n${GREEN}🎨 正在启动 Gradio UI...${NC}"
+echo "=================================================="
+echo "访问地址: http://localhost:7860"
 echo "=================================================="
 
-# 运行测试脚本
-python3 functional_test.py
+# 捕获 Ctrl+C 信号
+trap "echo -e '\n${YELLOW}🧹 正在停止服务...${NC}'; kill $SERVER_PID; exit" INT
 
-TEST_EXIT_CODE=$?
+# 启动 Gradio UI（前台运行）
+python3 gradio_ui.py
 
-# 3. 清理工作
-echo -e "\n=================================================="
-echo -e "${YELLOW}🧹 正在停止 MCP Server...${NC}"
+# 如果 Gradio 退出，清理 MCP Server
+echo -e "\n${YELLOW}🧹 正在停止 MCP Server...${NC}"
 kill $SERVER_PID
-
-if [ $TEST_EXIT_CODE -eq 0 ]; then
-    echo -e "${GREEN}🎉 测试全部通过！${NC}"
-else
-    echo -e "${RED}❌ 测试失败 (Exit Code: $TEST_EXIT_CODE)${NC}"
-fi
-
-exit $TEST_EXIT_CODE
