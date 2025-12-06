@@ -12,6 +12,8 @@ import logging
 from typing import Dict, Any, Optional, List
 from urllib.parse import urlparse
 from datetime import datetime
+import uuid
+from typing import Dict, Any, Optional, List
 
 import dashscope
 from fastmcp import FastMCP
@@ -23,8 +25,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler('audio_mcp_server.log', encoding='utf-8')
+        logging.StreamHandler(sys.stdout)
     ]
 )
 logger = logging.getLogger(__name__)
@@ -160,6 +161,9 @@ def call_qwen_audio(
     )
     
     if response.status_code != 200:
+        # Check for InvalidParameter error about file size
+        if getattr(response, "code", "") == "InvalidParameter" or "exceeds the maximum length" in response.message:
+             raise ValueError(f"AUDIO_TOO_LARGE: {response.message}")
         raise Exception(f"API 调用失败 [状态码: {response.status_code}]: {response.message}")
     
     # 提取文本响应
@@ -175,6 +179,21 @@ def call_qwen_audio(
         "request_id": response.get("request_id", "N/A")
     }
 
+def save_result_to_file(data: Dict[str, Any], prefix: str = "qwen_analysis") -> str:
+    """Save analysis result to local temp file"""
+    output_dir = os.path.join(os.getcwd(), "tmp_results")
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        
+    file_name = f"{prefix}_{uuid.uuid4().hex}.json"
+    abs_path = os.path.join(output_dir, file_name)
+    
+    with open(abs_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        
+    logger.info(f"💾 Analysis saved to: {abs_path}")
+    return abs_path
+
 # ==========================
 # MCP 服务器实例
 # ==========================
@@ -187,56 +206,7 @@ mcp = FastMCP(
 # 工具定义
 # ==========================
 
-@mcp.tool
-def transcribe_audio(audio_url: str, language: str = "auto") -> str:
-    """
-    语音转文字 - 将音频内容转录为文本
-    
-    返回结构化的 JSON 结果，包含：
-    - transcript: 转录的文本内容
-    - language: 检测到的语言
-    - confidence: 置信度评估
-    
-    Args:
-        audio_url: 音频文件的公开 URL（支持 http/https）
-        language: 语言类型，可选值: auto（自动检测）, zh（中文）, en（英文）
-        
-    Returns:
-        str: JSON 格式的转录结果
-    """
-    logger.info(f"📝 语音转文字任务: {audio_url}, 语言: {language}")
-    
-    # 输入验证
-    if not validate_url(audio_url):
-        logger.error(f"❌ 无效的 URL: {audio_url}")
-        return create_error_response("InvalidURL", "提供的音频 URL 格式无效", audio_url)
-    
-    try:
-        # 构建问题
-        lang_hint = ""
-        if language != "auto":
-            lang_hint = f"（音频语言为{language}）"
-        
-        question = f"请将这段音频的语音内容完整地转录为文字{lang_hint}。只输出转录的文字内容，不要添加额外的说明。"
-        
-        # 调用 API
-        result = call_qwen_audio(audio_url, question)
-        
-        # 构建结构化响应
-        data = {
-            "transcript": result["text"],
-            "language": language,
-            "audio_url": audio_url,
-            "model": result["model"],
-            "request_id": result["request_id"]
-        }
-        
-        logger.info(f"✅ 转录成功，文本长度: {len(result['text'])} 字符")
-        return create_success_response(data, "transcription")
-        
-    except Exception as e:
-        logger.error(f"❌ 转录失败: {str(e)}")
-        return create_error_response("TranscriptionError", "音频转录过程中发生错误", str(e))
+
 
 
 @mcp.tool
@@ -314,8 +284,33 @@ def analyze_speaker(audio_url: str) -> str:
                 data["parsed_features"]["tone"] = line.split('：')[-1].strip() if '：' in line else "unknown"
         
         logger.info(f"✅ 说话人分析完成")
-        return create_success_response(data, "speaker_analysis")
         
+        # Save to file
+        file_path = save_result_to_file(data, "speaker")
+        
+        # Return lightweight response with path
+        return create_success_response({
+            "summary": "Speaker analysis complete.",
+            "full_result_path": file_path,
+            "features_preview": data["parsed_features"]
+        }, "speaker_analysis")
+        
+    except ValueError as e:
+        if "AUDIO_TOO_LARGE" in str(e):
+             logger.warning(f"⚠️ 音频过大跳过说话人分析: {e}")
+             return json.dumps({
+                "success": True, # Soft pass for workflow continuity
+                "analysis_type": "speaker_analysis", 
+                "data": {
+                    "raw_analysis": "Audio too large for detailed speaker analysis via this model. Using defaults.",
+                    "parsed_features": {
+                        "gender": "unknown", "age_range": "unknown", "emotion": "unknown",
+                        "accent": "unknown", "speaking_rate": "unknown", "tone": "unknown"
+                    },
+                    "note": "Skipped due to file size limits."
+                }
+             }, ensure_ascii=False)
+        return create_error_response("SpeakerAnalysisError", str(e), str(e))
     except Exception as e:
         logger.error(f"❌ 说话人分析失败: {str(e)}")
         return create_error_response("SpeakerAnalysisError", "说话人分析过程中发生错误", str(e))
@@ -388,8 +383,30 @@ def detect_audio_events(audio_url: str, event_types: str = "all") -> str:
         # 简化版本，直接返回原始文本
         
         logger.info(f"✅ 音频事件检测完成")
-        return create_success_response(data, "event_detection")
         
+        # Save to file
+        file_path = save_result_to_file(data, "events")
+        
+        # Return lightweight response
+        return create_success_response({
+            "summary": f"Event detection complete ({event_types}).",
+            "full_result_path": file_path,
+            "raw_preview": result["text"][:200] + "..."
+        }, "event_detection")
+        
+    except ValueError as e:
+        if "AUDIO_TOO_LARGE" in str(e):
+             logger.warning(f"⚠️ 音频过大跳过事件检测: {e}")
+             return json.dumps({
+                "success": True, # Soft pass
+                "analysis_type": "event_detection",
+                "data": {
+                    "raw_detection": "Audio too large for event detection via this model.",
+                    "events": [],
+                    "note": "Skipped due to file size limits."
+                }
+             }, ensure_ascii=False)
+        return create_error_response("EventDetectionError", str(e), str(e))
     except Exception as e:
         logger.error(f"❌ 音频事件检测失败: {str(e)}")
         return create_error_response("EventDetectionError", "音频事件检测过程中发生错误", str(e))
@@ -505,7 +522,15 @@ def comprehensive_audio_analysis(audio_url: str, custom_question: Optional[str] 
         }
         
         logger.info(f"✅ 综合分析完成")
-        return create_success_response(data, "comprehensive_analysis")
+        
+        # Save to file
+        file_path = save_result_to_file(data, "comprehensive")
+        
+        return create_success_response({
+            "summary": "Comprehensive analysis complete.",
+            "full_result_path": file_path,
+            "preview": result["text"][:500] + "..."
+        }, "comprehensive_analysis")
         
     except Exception as e:
         logger.error(f"❌ 综合分析失败: {str(e)}")
@@ -528,7 +553,7 @@ def get_server_status() -> str:
         "host": Config.HOST,
         "port": Config.PORT,
         "available_tools": [
-            "transcribe_audio",
+
             "analyze_speaker",
             "detect_audio_events",
             "search_keyword_in_audio",
@@ -550,7 +575,7 @@ if __name__ == "__main__":
     logger.info(f"📡 服务地址: http://{Config.HOST}:{Config.PORT}")
     logger.info(f"🤖 使用模型: {Config.DEFAULT_MODEL}")
     logger.info(f"🔧 可用工具:")
-    logger.info("   - transcribe_audio: 语音转文字")
+
     logger.info("   - analyze_speaker: 说话人分析")
     logger.info("   - detect_audio_events: 音频事件检测")
     logger.info("   - search_keyword_in_audio: 关键词搜索")

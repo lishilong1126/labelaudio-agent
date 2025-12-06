@@ -66,9 +66,18 @@ class AgentExecutionLogger(BaseCallbackHandler):
             "step": self.step_count
         })
         
-    def on_tool_end(self, output: str, **kwargs: Any) -> None:
+    def on_tool_end(self, output: Any, **kwargs: Any) -> None:
         """工具调用结束时"""
-        logger.info(f"📤 工具输出: {output[:200]}..." if len(output) > 200 else f"📤 工具输出: {output}")
+        # Handle both string and ToolMessage objects
+        if hasattr(output, 'content'):
+            output_str = str(output.content)
+        else:
+            output_str = str(output)
+        
+        if len(output_str) > 200:
+            logger.info(f"📤 工具输出: {output_str[:200]}...")
+        else:
+            logger.info(f"📤 工具输出: {output_str}")
         logger.info("✅ 工具执行完成")
         
     def on_tool_error(self, error: Exception, **kwargs: Any) -> None:

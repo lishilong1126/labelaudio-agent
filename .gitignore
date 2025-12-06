@@ -57,3 +57,6 @@ inspect_*.py
 gradio_cached_examples/
 flagged/
 .env
+
+# Recycle bin
+_recycle_bin/
